@@ -13,8 +13,9 @@ export default function SignUpForm() {
         event.preventDefault();
         
         try {
-        const response = await fetch ("https://fsa-jwt-practice.herokuapp.com/signup", { method: "POST",
-        headers: {
+        const response = await fetch ("https://fsa-jwt-practice.herokuapp.com/signup", {
+            method: "POST",
+            headers: {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({ username, password }),
